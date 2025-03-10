@@ -19,7 +19,7 @@ This study utilizes two primary data sources: Ground measurement stations from t
 ### NO2 Measurement Data 
 Source: https://sim.csb.gov.tr/Services/AirQuality
 
-Data Format: Excel ( Daily average NO2 ratio)
+Data Format: Excel ( Daily average NO2 data)
 
 Data Range: Customizable
 
