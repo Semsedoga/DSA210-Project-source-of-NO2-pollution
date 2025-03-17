@@ -22,7 +22,7 @@ This study utilizes **two primary data sources**:
 - **NO₂ concentration data** from the **Ministry of Environment, Urbanization, and Climate Change**
 - **Traffic data** from the **Istanbul Metropolitan Municipality**
 
-### 1️⃣ NO₂ Measurement Data  
+### NO₂ Measurement Data  
 **Source:** [Ministry of Environment, Urbanization, and Climate Change](https://sim.csb.gov.tr/Services/AirQuality)  
 **Data Format:** CSV/Excel (Hourly NO₂ concentration in µg/m³)  
 **Date Range:** Customizable based on the study period  
@@ -31,7 +31,7 @@ This study utilizes **two primary data sources**:
 - Selected stations are based on **high NO₂ concentration levels and data consistency**.
 - The dataset consists of **hourly NO₂ concentration values**, allowing for detailed **temporal analysis**.
 
-### 2️⃣ Traffic Data  
+### Traffic Data  
 **Source:** [Istanbul Metropolitan Municipality Open Data Platform](https://ulasav.csb.gov.tr/dataset/34-hourly-traffic-density-data-set)  
 **Data Format:** CSV/Excel (Hourly traffic density percentage)  
 **Date Range:** Customizable based on the study period  
@@ -42,21 +42,21 @@ This study utilizes **two primary data sources**:
 
 ## Analysis Plan
 
-### 1️⃣ Data Collection
+### Data Collection
 - **Retrieving hourly NO₂ concentration levels** from selected ground measurement stations.
 - **Obtaining hourly traffic congestion levels** from the Istanbul Metropolitan Municipality.
 
-### 2️⃣ Data Cleaning
+### Data Cleaning
 - **Standardizing date-time formats** across all datasets.
 - **Handling missing values** through interpolation or removal of inconsistent data points.
 - **Aligning datasets based on timestamp synchronization** to ensure accurate comparisons.
 
-### 3️⃣ Correlation Analysis
-#### 📌 Traffic & NO₂ Relationship
+### Correlation Analysis
+#### Traffic & NO₂ Relationship
 - **Applying Pearson correlation analysis** to measure the **statistical relationship** between **traffic density and NO₂ concentration**.
 - Identifying **peak traffic hours** and their effect on **pollution levels**.
 
-#### 📌 Multivariable Analysis
+#### Multivariable Analysis
 - Analyzing the impact of **different levels of traffic congestion** on NO₂ emissions.
 - Potentially using **regression models** to quantify the impact of traffic on NO₂ levels.
 
@@ -64,6 +64,6 @@ This study utilizes **two primary data sources**:
 - Identification of **peak NO₂ pollution periods** based on **traffic congestion levels**.
 - Insights to support **sustainable traffic management strategies** in **Istanbul**.
 
-This study aims to provide **data-driven insights** into NO₂ pollution sources, contributing to better air quality policies and urban sustainability initiatives. 🚦🌍
+This study aims to provide **data-driven insights** into NO₂ pollution sources, contributing to better air quality policies and urban sustainability initiatives. 
 ```
 
