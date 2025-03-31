@@ -145,11 +145,11 @@ The next step will be applying **machine learning techniques** to further explor
 
 [analysis script](no2_analysis_script.py)
 
-[Hourly NO₂ Levels - Kağıthane](ka%C4%9F%C4%B1thane_no2-2.jpeg)
+[Hourly NO₂ Levels - Kağıthane](kagıthane_no2-2.jpeg)
 
 [Hourly NO₂ Levels - Üsküdar](uskudar_no2-2.jpeg)
 
-[Kağıthane - Rush hours and Night Hours](hourly_ka%C4%9F%C4%B1thane.jpeg)
+[Kağıthane - Rush hours and Night Hours](hourly_kagıthane.jpeg)
 
 [Üsküdar - Rush hours and Night Hours](hourly_uskudar.jpeg)
 
