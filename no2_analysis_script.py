@@ -16,17 +16,24 @@ df["Ay"] = df["Tarih"].dt.to_period("M").astype(str)
 # --- EDA ---
 
 # 1. Time Series Plot (Both stations)
-plt.figure(figsize=(14,5))
-plt.plot(df["Tarih"], df["Kağıthane"], label="Kağıthane", alpha=0.6)
-plt.plot(df["Tarih"], df["Üsküdar"], label="Üsküdar", alpha=0.6)
-plt.title("Hourly NO₂ Levels - Istanbul Monitoring Stations")
+
+plt.figure(figsize=(12, 4))
+plt.plot(df["Tarih"], df["Kağıthane"], color="darkorange")
+plt.title("Hourly NO₂ Levels - Kağıthane")
 plt.xlabel("Date")
 plt.ylabel("NO₂ (µg/m³)")
-plt.legend()
-plt.grid(True)
+plt.grid(True, linestyle="--", alpha=0.3)
 plt.tight_layout()
-plt.savefig("time_series_istanbul.png")
-plt.close()
+plt.show()
+
+plt.figure(figsize=(12, 4))
+plt.plot(df["Tarih"], df["Üsküdar"], color="seagreen")
+plt.title("Hourly NO₂ Levels - Üsküdar")
+plt.xlabel("Date")
+plt.ylabel("NO₂ (µg/m³)")
+plt.grid(True, linestyle="--", alpha=0.3)
+plt.tight_layout()
+plt.show()
 
 # 2. Hourly Averages
 hourly = df.groupby("Saat")[["Kağıthane", "Üsküdar"]].mean().reset_index()
