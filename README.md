@@ -16,6 +16,9 @@ Air pollution, particularly NO₂ emissions from traffic, is a major concern in 
 
 ### Hypothesis  
 - **Higher traffic volume leads to increased NO₂ concentration levels**, with peak pollution occurring during **rush hours**.
+- The NO₂ level during **rush hours (07:00–09:00 and 17:00–19:00)** is significantly higher than during **night hours (01:00–03:00)** in Istanbul.
+- The average NO₂ level on **weekdays** is significantly higher than on **weekends** in Istanbul.
+
 
 ## Data Sources & Collection Methodology
 This study utilizes **two primary data sources**:
@@ -65,5 +68,77 @@ This study utilizes **two primary data sources**:
 - Insights to support **sustainable traffic management strategies** in **Istanbul**.
 
 This study aims to provide **data-driven insights** into NO₂ pollution sources, contributing to better air quality policies and urban sustainability initiatives. 
-```
+
+## Exploratory Data Analysis & Hypothesis Testing
+
+###  Dataset Overview
+This analysis focuses on hourly NO₂ (nitrogen dioxide) measurements from two air quality monitoring stations in **Kağıthane** and **Üsküdar**, Istanbul. The data spans from January to May 2024 and was obtained from the [Istanbul Metropolitan Municipality Open Data Portal](https://data.ibb.gov.tr/).
+
+Üsküdar and Kağıthane were selected because of their low data loss and the fact that they are located on different sides of Istanbul, offering a geographical contrast between the Asian and European parts of the city.
+
+---
+
+### Data Cleaning Process
+
+The original dataset contained hourly NO₂ measurements from air quality monitoring stations in Istanbul. The data cleaning steps were as follows:
+
+1. **Datetime Parsing:**  
+   The `Tarih` (timestamp) column was converted to `datetime` format to enable proper time-based analysis.
+
+2. **Handling Missing Values:**  
+   Some rows had missing NO₂ values for either Kağıthane or Üsküdar. These rows were:
+   - **Retained** if at least one station had a valid value (for comparisons involving one location only).
+   - **Dropped** from specific comparisons (like hypothesis testing) when both values were required to be present.
+
+3. **Feature Engineering:**  
+   To support time-based analysis, the following columns were created:
+   - `Hour`: Extracted from timestamp to group data by hour of day
+   - `Month`: Used to observe monthly trends
+   - `Weekday/Weekend Indicator`: Used to compare pollution levels on weekdays vs weekends
+
+4. **No Outlier Removal:**  
+   Since high NO₂ values may correspond to real pollution peaks (e.g., during traffic congestion), no outlier removal was applied to preserve data integrity.
+
+---
+
+### Exploratory Data Analysis (EDA)
+
+#### 1. Time Series Overview
+- The NO₂ concentration fluctuates throughout the day, with notable peaks during certain periods.
+- A visible difference in overall NO₂ behavior can be observed between the two monitoring locations, representing different parts of Istanbul.
+
+#### 2. Hourly Trends
+- **Rush hour periods** correlate with increased NO₂ levels in both regions.
+- The increase is more prominent in areas with heavier traffic density.
+
+#### 3. Monthly Averages
+- NO₂ levels rise gradually from January to March, peaking in April.
+- A decrease is observed starting May, potentially due to seasonal variation.
+
+#### 4. Weekday vs Weekend
+- Both regions exhibit higher NO₂ levels on **weekdays**, which supports the traffic-related pollution hypothesis.
+
+---
+
+### Hypothesis Testing Results
+
+| Hypothesis | p-value | Statistically Significant? |
+|------------|---------|-----------------------------|
+| Weekdays vs Weekends | 2.78e-35 (Kağıthane), 3.39e-02 (Üsküdar) | ✅ Yes |
+| Rush Hours vs Night Hours | 2.30e-07 (Kağıthane), 1.11e-04 (Üsküdar) | ✅ Yes |
+
+All tests support the hypothesis that **traffic volume significantly affects NO₂ pollution** in Istanbul.
+
+---
+
+### Summary
+These findings highlight the relationship between traffic activity and air quality in Istanbul:
+- NO₂ pollution increases during peak traffic hours.
+- Weekday pollution levels are significantly higher than weekend levels.
+- This indicates a strong correlation between human activity (especially traffic) and air pollution.
+
+The next step will be applying **machine learning techniques** to further explore and model pollution behavior.
+
+---
+
 
