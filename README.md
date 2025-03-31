@@ -141,8 +141,13 @@ The next step will be applying **machine learning techniques** to further explor
 
 ---
 
-### Plots 
+### Graphs 
 
-[analysis script](no2_analysis_script.py).
-
+[analysis script](no2_analysis_script.py)
+[Hourly NO₂ Levels - Kağıthane](no2_analysis_script.py)
+[Hourly NO₂ Levels - Üsküdar](no2_analysis_script.py)
+[Kağıthane - Rush hours and Night Hours](no2_analysis_script.py)
+[Üsküdar - Rush hours and Night Hours](no2_analysis_script.py)
+[Monthly Average NO₂ - Istanbul](no2_analysis_script.py)
+[Weekday vs Weekend NO₂ Levels - Istanbul](no2_analysis_script.py)
 
