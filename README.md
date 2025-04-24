@@ -140,6 +140,30 @@ These findings highlight the relationship between traffic activity and air quali
 The next step will be applying **machine learning techniques** to further explore and model pollution behavior.
 
 ---
+## Visualizations Explained
+
+This section provides a description of the visualizations used in the project to analyze NO₂ pollution in Istanbul:
+
+### 1. Hourly NO₂ Levels - Kağıthane & Üsküdar
+- **Purpose:** Shows the hourly NO₂ measurements over time.
+- **Insights:** Helps to observe pollution trends and identify potential seasonal or daily patterns in each district separately.
+
+### 2. Hourly Averages by Traffic Intensity
+- **Files:** `hourly_kağıthane.png`, `hourly_uskudar.png`
+- **Purpose:** Compares NO₂ levels during rush hours (7–8 AM & 5–7 PM) and non-peak hours.
+- **Insights:** Used to assess the impact of traffic density on pollution levels.
+
+### 3. Monthly Average NO₂ - Istanbul
+- **File:** `monthly_avg_istanbul.png`
+- **Purpose:** Displays the monthly average NO₂ concentration for both districts.
+- **Insights:** Helps evaluate seasonal changes in air quality and long-term trends.
+
+### 4. Weekday vs Weekend NO₂ Levels
+- **File:** `weekday_weekend_istanbul.png`
+- **Purpose:** Compares NO₂ pollution between weekdays and weekends.
+- **Insights:** Highlights the effect of working-day traffic versus reduced weekend activity.
+
+Each visualization aims to contribute to understanding how traffic and time-related factors influence air pollution, supporting data-driven environmental insights for Istanbul.
 
 ### Graphs 
 
