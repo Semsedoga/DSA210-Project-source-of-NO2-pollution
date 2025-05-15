@@ -165,19 +165,3 @@ This section provides a description of the visualizations used in the project to
 
 Each visualization aims to contribute to understanding how traffic and time-related factors influence air pollution, supporting data-driven environmental insights for Istanbul.
 
-### Graphs 
-
-[analysis script](no2_analysis_script.py)
-
-[Hourly NO₂ Levels - Kağıthane](kagıthane_no2-2.jpeg)
-
-[Hourly NO₂ Levels - Üsküdar](uskudar_no2-2.jpeg)
-
-[Kağıthane - Rush hours and Night Hours](hourly_kagıthane.jpeg)
-
-[Üsküdar - Rush hours and Night Hours](hourly_uskudar.jpeg)
-
-[Monthly Average NO₂ - Istanbul](monthly_avg_istanbul.jpeg)
-
-[Weekday vs Weekend NO₂ Levels - Istanbul](weekday_weekend_istanbul.jpeg)
-
